@@ -116,7 +116,7 @@ input:checked {
   border: 2px solid #4ade80;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 700px) {
   button div {
     display: none;
   }
