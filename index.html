@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+  <head>
+    <link rel="icon" type="image/png" href="./assets/icone-logo.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DD - DAY DIARY</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- <script>
+      const changeThemeToDark = () => {
+        document.documentElement.setAttribute("data-theme", "dark")
+        localStorage.setItem("data-theme", "dark")
+      }
+
+      const changeThemeToLight = () => {
+        document.documentElement.setAttribute("data-theme", "light")
+        localStorage.setItem("data-theme", "light")
+      }
+      let theme = localStorage.getItem("data-theme")
+      if (theme == "dark") changeThemeToDark()
+    </script> -->
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="Logomarca do Aplicativo Day Diary" />
+      <button>
+        <img src="./assets/icone-mais.svg" alt="Icone sinal de mais" />
+        Registrar o meu dia
+      </button>
+      <!-- <button class="restart" id="restart">Apagar o dia</button> -->
+    </header>
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit" data-name="banho">🛀</div>
+        <div class="habit" data-name="cafeDaManha">🍞</div>
+        <div class="habit" data-name="escola">🏫</div>
+        <div class="habit" data-name="almoco">🧆</div>
+        <div class="habit" data-name="estudos">📚</div>
+        <div class="habit" data-name="tempoLivre">☁</div>
+        <div class="habit" data-name="jantar">🥘</div>
+        <div class="habit" data-name="dormir">🛏</div>
+      </div>
+
+      <div class="days"></div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
