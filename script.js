@@ -35,9 +35,9 @@ function save() {
   localStorage.setItem("NLWSetup@habits", JSON.stringify(nlwSetup.data))
 }
 
-function del() {
-  localStorage.removeItem("NLWSetup@habits") || {}
-}
+// function del() {
+//   localStorage.removeItem("NLWSetup@habits") || {}
+// }
 
 const data = JSON.parse(localStorage.getItem("NLWSetup@habits")) || {}
 nlwSetup.setData(data)

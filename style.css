@@ -109,14 +109,14 @@ input {
   border-radius: 8px;
   background: #18181b;
   cursor: pointer;
-}
+} 
 
 input:checked {
   background: #22c55e;
   border: 2px solid #4ade80;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   button div {
     display: none;
   }
